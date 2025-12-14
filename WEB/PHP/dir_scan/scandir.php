@@ -1,5 +1,13 @@
 <?php
 
-$files = array_slice(scandir('.'), 0);
+$repertoire = "mon_dossier";
+
+$contenu = scandir($repertoire);
+
+foreach ($contenu as $element) {
+    if ($element !== "." && $element !== "..") {
+        echo $element . "<br>";
+    }
+}
 
 ?>
