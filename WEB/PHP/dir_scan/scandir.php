@@ -1,6 +1,6 @@
 <?php
 
-$repertoire = $_GET['dir'] ?? '';
+$repertoire = ".";
 
 $contenu = scandir($repertoire);
 
