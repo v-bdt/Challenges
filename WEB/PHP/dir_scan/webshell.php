@@ -1,49 +1,7 @@
 <?php
-/* *****************************************************************************
-***
-*** Laudanum Project
-*** A Collection of Injectable Files used during a Penetration Test
-***
-*** More information is available at:
-***  http://laudanum.secureideas.net
-***  laudanum@secureideas.net
-***
-***  Project Leads:
-***         Kevin Johnson <kjohnson@secureideas.net>
-***         Tim Medin <tim@counterhack.com>
-***
-*** Copyright 2014 by Kevin Johnson and the Laudanum Team
-***
-********************************************************************************
-***
-*** This file provides shell access to the system. It is built based on the 2.1
-*** version of PHPShell which is Copyright (C) 2000-2005 Martin Geisler
-*** <mgeisler[at]mgeisler.net>
-***
-*** Updated by Tim Medin
-***
-********************************************************************************
-*** This program is free software; you can redistribute it and/or
-*** modify it under the terms of the GNU General Public License
-*** as published by the Free Software Foundation; either version 2
-*** of the License, or (at your option) any later version.
-*** 
-*** This program is distributed in the hope that it will be useful,
-*** but WITHOUT ANY WARRANTY; without even the implied warranty of
-*** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*** GNU General Public License for more details.
-*** 
-*** You can get a copy of the GNU General Public License from this
-*** address: http://www.gnu.org/copyleft/gpl.html#SEC1
-*** You can also write to the Free Software Foundation, Inc., 59 Temple
-*** Place - Suite 330, Boston, MA  02111-1307, USA.
-***
-***************************************************************************** */
 
 // ***************** Config entries below ***********************
 
-// IPs are enterable as individual addresses TODO: add CIDR support
-$allowedIPs = array("0.0.0.0");
 
 # format is "username" => "password" 
 # password is generated using sha1sum as shown below (don't forget the -n, KEVIN!)
@@ -51,18 +9,6 @@ $allowedIPs = array("0.0.0.0");
 $users = array("kevin" => "b441ac06613fc8d63795be9ad0beaf55011936ac", "tim" => "a94a1fe5ccb19ba61c4c0873d391e987982fbbd3", "yomamma" => "a94a1fe5ccb19ba61c4c0873d391e987982fbbd3");
 
 # *********** No editable content below this line **************
-
-$allowed = 0;
-foreach ($allowedIPs as $IP) {
-    if ($_SERVER["REMOTE_ADDR"] == $IP)
-        $allowed = 1;
-}
-
-if ($allowed == 0) {
-    header("HTTP/1.0 404 Not Found");
-    die();
-}
-
 
 
 /* This error handler will turn all notices, warnings, and errors into fatal
