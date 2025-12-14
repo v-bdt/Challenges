@@ -1,6 +1,6 @@
 <?php
 
-$repertoire = "mon_dossier";
+$repertoire = ".";
 
 $contenu = scandir($repertoire);
 
