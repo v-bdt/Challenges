@@ -1,3 +1,3 @@
 <?php
-$handle = fopen("fr_lang.php", "r");
+$handle = fopen("./fr_lang.php", "r");
 ?>
