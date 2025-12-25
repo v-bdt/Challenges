@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE title [<!ENTITY test SYSTEM 'file:///file.txt'>]>
+<?xml version="1.0" ?><!DOCTYPE title [<!ENTITY test SYSTEM 'file:///flag.txt'>]>
 <rss version="2.0">
 <channel>
   <title>Ajax et XML</title>
