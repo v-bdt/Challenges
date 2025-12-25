@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<order>
-<product>1234</product>
-<count>1</count>
-<orderer>
-<contact>Jan P. Monsch</contact>
-<account>789</account>
-</orderer>
-</order>
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>Votre Titre de Blog</title>
+    <link>URL de votre blog</link>
+    <description>Description brève de votre blog</description>
+    <!-- Ajouter des éléments d'article ici -->
+</channel>
+</rss>
