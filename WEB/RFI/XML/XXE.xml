@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" ?><!DOCTYPE title [<!ENTITY test SYSTEM 'file:///file.txt'>]>
 <rss version="2.0">
 <channel>
   <title>Ajax et XML</title>
@@ -9,7 +9,7 @@
   <link>http:///www.scriptol.fr/index.php</link>
    </image>
    <item>
-      <title>Nouvelle  du jour</title>
+      <title>&test;</title>
       <link>https://www.scriptol.fr/xml-rss.html</link> 
       <description>Tout  savoir sur RSS</description>
    </item>
