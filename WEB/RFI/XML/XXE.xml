@@ -1,9 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" ?>
 <rss version="2.0">
 <channel>
-    <title>Votre Titre de Blog</title>
-    <link>URL de votre blog</link>
-    <description>Description brève de votre blog</description>
-    <!-- Ajouter des éléments d'article ici -->
-</channel>
+  <title>Ajax et XML</title>
+  <link>https://www.scriptol.fr/</link>
+  <description>L'interface graphique XML etc...</description>
+  <image>
+  <url>http:///www.scriptol.fr/xml-icon.gif</url>
+  <link>http:///www.scriptol.fr/index.php</link>
+   </image>
+   <item>
+      <title>Nouvelle  du jour</title>
+      <link>https://www.scriptol.fr/xml-rss.html</link> 
+      <description>Tout  savoir sur RSS</description>
+   </item>
+   <item>
+     <title>Nouvelle  du lendemain</title>
+    <link>https://www.scriptol.fr/xml-rdf.php</link> 
+    <description>Et  tout savoir sur RDF</description>
+   </item>
+  </channel>
 </rss>
