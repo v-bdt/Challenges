@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE rss [
+<!DOCTYPE title [
     <!ENTITY test SYSTEM "php://filter/convert.base64-encode/resource=index.php">
 ]>
 <rss version="2.0">
