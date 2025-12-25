@@ -6,6 +6,7 @@
 <channel>
     <title>Votre Titre de Blog</title>
     <link>URL de votre blog</link>
+    <foo>&xxe;</foo>
     <description>Description brève de votre blog</description>
     <!-- Ajouter des éléments d'article ici -->
 </channel>
